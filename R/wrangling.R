@@ -46,7 +46,6 @@ GCA_clean_text <- function(vec){
 #' @param chosen_url Url from a youtube video
 #' @param lang Language to find transcripts
 #'
-#' @export
 GCA_get_video_corpus <- function(chosen_url, lang = "pt"){
   vec <- try(youtubecaption::get_caption(chosen_url, language = lang), silent = T)
 
