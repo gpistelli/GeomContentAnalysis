@@ -15,7 +15,6 @@ Imports:
     tm,
     emoji,
     syuzhet,
-    youtubecaption,
     magrittr
-Suggests: tidyverse, rtweet, FactoMineR, factoextra, cluster, GDAtools
+Suggests: tidyverse, rtweet, FactoMineR, factoextra, cluster, GDAtools, youtubecaption
 RoxygenNote: 7.1.2
