@@ -95,13 +95,19 @@ GCA_get_main_terms <- function(fir_mx, n = 10){
 #'
 #' @param mx matrix to be analyzed each main terms value
 #' @param main_terms a character vector with the main terms to be searched into our matrix
+#' @param get_prop logical value to decide if it's going to convert absolute into proportional value
 #'
 #' @export
-GCA_get_main_terms_prop <- function(mx, main_terms){
+GCA_get_main_terms_prop <- function(mx, main_terms, get_prop = T){
   vec <- vector(mode = "numeric", length = length(main_terms))
   for (i in 1:length(main_terms)){
-    vec[i] <- sum(mx[,grep(paste0("^", main_terms[i], "$"), colnames(mx))])/sum(mx)
+    vec[i] <- sum(mx[, grep(paste0("^", main_terms[i], "$"), colnames(mx))])
   }
+
+  if(get_prop){
+  vec <- vec/sum(mx)
+  }
+
   names(vec) <- main_terms
   return(vec)
 }

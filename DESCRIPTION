@@ -17,4 +17,4 @@ Imports:
     syuzhet,
     magrittr
 Suggests: tidyverse, rtweet, FactoMineR, factoextra, cluster, GDAtools, youtubecaption
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3

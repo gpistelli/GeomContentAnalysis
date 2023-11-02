@@ -4,12 +4,14 @@
 \alias{GCA_get_main_terms_prop}
 \title{Get main terms proportion}
 \usage{
-GCA_get_main_terms_prop(mx, main_terms)
+GCA_get_main_terms_prop(mx, main_terms, get_prop = T)
 }
 \arguments{
 \item{mx}{matrix to be analyzed each main terms value}
 
 \item{main_terms}{a character vector with the main terms to be searched into our matrix}
+
+\item{get_prop}{logical value to decide if it's going to convert absolute into proportional value}
 }
 \description{
 This function returns the proportions of each main term into the matrix passed into our function.

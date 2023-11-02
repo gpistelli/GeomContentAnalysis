@@ -11,7 +11,7 @@ GCA_create_term_matrix(df, term, agent)
 
 \item{term}{A character element used to filter your corpus}
 
-\item{agent}{Your agent name, to make it easier to}
+\item{agent}{Your agent name, to make it easier to link them}
 }
 \description{
 Filter a matrix to limit itself to a chosen term
